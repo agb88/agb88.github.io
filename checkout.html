@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/sprites.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/steps.css">
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <script src="js/main.js"></script>
+    <title>Pizza</title>
+    <!--[if (lt IE 9) | (IEMobile)]>
+    <style>
+        .ie {
+            font-size: 50px;
+            display: block;
+            background-color: red;
+            color: black;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            padding-top: 200px;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<!--[if (lt IE 9) | (IEMobile)]><p class="ie">Ваш браузер устарел!!! Обновить можно тут:<br><a
+        href="http://updatebrowser.net/">http://updatebrowser.net/</a></p><![endif]-->
+
+
+<div class="header">
+    <ul class="header-info">
+        <li class="option-button">
+            <a id="option-button" href="#" onclick='showHideMenu(this.id)'>
+                <div class="option-button__button">Опции</div>
+            </a>
+        </li>
+        <li class="option-button">
+            <a id="menu-button" href="#" onclick='showHideMenu(this.id)'>
+                <div class="option-button__button">Меню</div>
+            </a>
+        </li>
+        <li class="header-info__li-img"><a href="main.html"><img class="header-info__img" src="images/logo.png"
+                                                                 title="logo" alt="logo"></a>
+        </li>
+        <li class="header-info__li-ul">
+            <ul class="header-info__ul">
+                <li class="header-info__link">
+                    <a href="#">Заказать онлайн</a>
+                </li>
+                <li class="header-info__link">
+                    <a href="#">О нас</a>
+                </li>
+                <li class="header-info__link">
+                    <a href="#">Новости</a>
+                </li>
+                <li class="header-info__link">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-info__li-phone">
+            <div class="header-info__phone">Заказать в
+                <select onchange="showPhone(this)" name="city">
+                    <option value="1">Бресте</option>
+                    <option value="2">Витебске</option>
+                    <option value="3">Гомеле</option>
+                    <option value="4">Гродно</option>
+                    <option selected value="5">Минске</option>
+                    <option value="6">Могилеве</option>
+                </select>
+
+                <div class="header-info__phone__number">+375 17 217 17 17</div>
+            </div>
+
+        </li>
+        <li class="header-info__li-order">
+            <a href="order.html">
+                <div class="header-info__order">
+                    <div class="header-info__order__text"><i class="shopping-cart fa fa-shopping-cart fa-2x"></i>
+                        Ваш
+                        заказ
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="header-menu">
+        <ul>
+            <li class="header-menu__li">
+                <div class="bg-pizza_icon"></div>
+                <a class="header-menu__li__text" href="#">Пиццы</a>
+            </li>
+            <li class="header-menu__li">
+                <div class="bg-burger_icon"></div>
+                <a class="header-menu__li__text" href="#">Бургеры</a>
+            </li>
+            <li class="header-menu__li">
+                <div class="bg-salad_icon"></div>
+                <a class="header-menu__li__text" href="#">Салаты</a>
+            </li>
+            <li class="header-menu__li">
+                <div class="bg-taco_icon"></div>
+                <a class="header-menu__li__text" href="#">Такос</a>
+            </li>
+            <li class="header-menu__li">
+                <div class="bg-wrap_icon"></div>
+                <a class="header-menu__li__text" href="#">Лаваши</a>
+            </li>
+            <li class="header-menu__li">
+                <div class="bg-fries_icon"></div>
+                <a class="header-menu__li__text" href="#">Фри</a>
+            </li>
+            <li class="header-menu__li">
+                <div class="bg-drink_icon"></div>
+                <a class="header-menu__li__text" href="#">Напитки</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mobile-menu"></div>
+</div>
+<!----------------------------Визуальные шаги-------------------------->
+<ul id="steps" class="steps clearfix">
+    <li class="step"><a class="step__a active-step" href="order.html">1</a>
+
+        <div class="step__text">Заказ</div>
+    </li>
+    <li class="step"><a class="step__a active-step" href="checkout.html">2</a>
+
+        <div class="step__text">Оформление</div>
+    </li>
+    <li class="step"><a class="step__a" href="complete.html">3</a>
+
+        <div class="step__text">Готово</div>
+    </li>
+</ul>
+<!----------------------------Форма с данными----------------------------->
+<div class="checkout">
+    <form class="clearfix" action="#" method="post">
+        <div class="checkout-form">
+            <h3 class="title">Адрес доставки</h3>
+            <div class="col-2">
+                <label for="name">Имя*</label>
+                <input id="name" class="input" type="text" required="required">
+            </div>
+            <div class="col-2">
+                <label for="company">Компания</label>
+                <input id="company" class="input" type="text">
+            </div>
+            <div class="col-2">
+                <label for="email">e-mail</label>
+                <input id="email" class="input" type="email">
+            </div>
+            <div class="col-2">
+                <label for="phone">Телефон*</label>
+                <input id="phone" class="input" type="text" required="required">
+            </div>
+            <div class="col-2">
+                <label for="city">Город*</label>
+                <input id="city" class="input" type="text" required="required">
+            </div>
+            <div class="col-2">
+                <label for="street">Улица*</label>
+                <input id="street" class="input" type="text" required="required">
+            </div>
+            <div class="col-3">
+                <label for="home">Дом*</label>
+                <input id="home" class="input" type="text" required="required">
+            </div>
+            <div class="col-3">
+                <label for="building">Корпус</label>
+                <input id="building" class="input" type="text">
+            </div>
+            <div class="col-3">
+                <label for="app">Квартира</label>
+                <input id="app" class="input" type="text">
+            </div>
+            <div class="col-1">
+                <label for="notes">Дополнительная информация</label>
+                <textarea id="notes" type="textarea" rows="7" name="textar"></textarea>
+            </div>
+        </div>
+        <div class="checkout-button">
+            <input class="button" type="submit" value="Заказать" onclick='location.href = "complete.html"'>
+        </div>
+    </form>
+</div>
+<footer>
+    <ul class="social">
+        <li class="social__li"><a href="#">
+            <div class="social__icon bg-facebook"></div>
+        </a></li>
+        <li class="social__li"><a href="#">
+            <div class="social__icon bg-twitter"></div>
+        </a></li>
+        <li class="social__li"><a href="#">
+            <div class="social__icon bg-insta"></div>
+        </a></li>
+        <li class="social__li"><a href="#">
+            <div class="social__icon bg-youtube"></div>
+        </a></li>
+    </ul>
+    <img class="footer-logo" src="images/logo.png" title="logo" alt="logo">
+    <ul class="footer-address">
+        <li class="footer-address__li">Ресторан Пиццаро</li>
+        <li class="footer-address__li">г. Минск, ул. Комсомольская, 2</li>
+        <li class="footer-address__li">Телефон +375 17 217 17 17</li>
+        <li class="footer-address__li">e-mail: help@pizzaro.by</li>
+    </ul>
+    <p class="copyright">Copyright &copy; 2017 Pizzaro тема. Все права защищены. Сделано АГБ.</p>
+
+    <div class="footer-button"><i class="fa fa-map-marker fa-2x"></i>Мы на карте</div>
+</footer>
+</body>
+</html>

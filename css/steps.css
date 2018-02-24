@@ -1,0 +1,95 @@
+/*Шаги*/
+.steps {
+    padding: 50px 0 0;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+/*Элемент шага*/
+.step {
+    display: block;
+    position: relative;
+    float: left;
+    width: calc(100% / 3 - 1px);
+    margin: 0 auto;
+}
+
+/*Ссылка шага (кружок)*/
+.step__a {
+    display: block;
+    margin: 0 auto;
+    color: black;
+    line-height: 42px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid #f9f1db;
+}
+
+.step__a:hover{
+    background-color: #e1e1e1;
+}
+
+/*Текст шага (под кружком)*/
+.step__text {
+    margin: 10px 0 0 0;
+}
+
+/*Текст шага (под кружком)*/
+.step:first-child .step__text {
+    text-align: left;
+}
+
+/*Текст шага (под кружком)*/
+.step:last-child .step__text {
+    text-align: right;
+}
+
+/*Ссылка шага (1 кружок)*/
+.step:first-child .step__a {
+    margin: 0 auto 0 0;
+}
+
+/*Ссылка шага (последний кружок)*/
+.step:last-child .step__a {
+    margin: 0 0 0 auto;
+}
+
+/*Полоска по ширине элемента шага*/
+.step:before {
+    content: '';
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 23px;
+    border-top: 5px solid #ebeaef;
+    z-index: -1;
+}
+
+/*Текущий шаг*/
+.step__a.active-step {
+    background-color: #ffcd00;
+    border: 3px solid #ffcd00;
+}
+
+/*Текущий шаг*/
+.step__a.active-step:hover {
+    background-color: #e6b900;
+    border: 3px solid #e6b900;
+}
+
+@media (max-width: 805px) {
+    /*Шаги*/
+    .steps {
+        width: 70%;
+    }
+}
+
+@media (max-width: 630px) {
+    /*Шаги*/
+    .steps {
+        width: 80%;
+    }
+}

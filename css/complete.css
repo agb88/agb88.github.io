@@ -1,0 +1,53 @@
+.complete{
+    max-width: 1170px;
+    margin: 50px auto 20px;
+    padding: 0 5px;
+}
+
+.complete-img{
+    display: block;
+    width: 25%;
+    margin: auto;
+}
+
+.complete-text{
+    display: block;
+    font-size: 16px;
+    margin: 50px auto 50px;
+    width: 50%;
+    text-align: center;
+}
+
+/*Кнопка "На главную"*/
+.complete-button {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 200px;
+    line-height: 46px;
+    color: white;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #da002b;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+
+/*Кнопка "На главную*/
+.complete-button:hover {
+    background-color: #c00a27;
+    cursor: pointer;
+}
+
+@media (max-width: 414px){
+    .complete-img{
+        width: 35%;
+    }
+
+    .complete-text{
+        width: 75%;
+        margin: 30px auto 30px;
+    }
+}

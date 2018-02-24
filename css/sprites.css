@@ -1,0 +1,156 @@
+/*------------------Товары----------------------*/
+.bg-burger_icon_p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    height: 35px;
+    background: url('../images/css_sprites.png') -10px -10px no-repeat;
+}
+
+.bg-burger_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    height: 35px;
+    background: url('../images/css_sprites.png') -10px -65px no-repeat;
+}
+
+.bg-drink_icon_p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 44px;
+    background: url('../images/css_sprites.png') -10px -618px no-repeat;
+}
+
+.bg-drink_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 44px;
+    background: url('../images/css_sprites.png') -10px -682px no-repeat;
+}
+
+.bg-fries_icon_p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 39px;
+    height: 44px;
+    background: url('../images/css_sprites.png') -10px -234px no-repeat;
+}
+
+.bg-fries_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 39px;
+    height: 44px;
+    background: url('../images/css_sprites.png') -10px -298px no-repeat;
+}
+
+.bg-pizza_icon_p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    background: url('../images/css_sprites.png') -10px -362px no-repeat;
+}
+
+.bg-pizza_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    background: url('../images/css_sprites.png') -10px -426px no-repeat;
+}
+
+.bg-salad_icon_p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    background: url('../images/css_sprites.png') -10px -490px no-repeat;
+}
+
+.bg-salad_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    background: url('../images/css_sprites.png') -10px -554px no-repeat;
+}
+
+.bg-taco_icon_p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 47px;
+    height: 37px;
+    background: url('../images/css_sprites.png') -10px -120px no-repeat;
+}
+
+.bg-taco_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 47px;
+    height: 37px;
+    background: url('../images/css_sprites.png') -10px -177px no-repeat;
+}
+
+.bg-wrap_icon_p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 29px;
+    height: 45px;
+    background: url('../images/css_sprites.png') -10px -746px no-repeat;
+}
+
+.bg-wrap_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 29px;
+    height: 45px;
+    background: url('../images/css_sprites.png') -10px -811px no-repeat;
+}
+
+/*------------------Преимущества----------------------*/
+
+.bg-bag {
+    width: 91px; height: 83px;
+    background: url('../images/advantages.png') -10px -299px no-repeat;
+}
+
+.bg-chef {
+    width: 80px; height: 76px;
+    background: url('../images/advantages.png') -10px -104px no-repeat;
+}
+
+.bg-clock {
+    width: 103px; height: 74px;
+    background: url('../images/advantages.png') -10px -10px no-repeat;
+}
+
+.bg-food {
+    width: 124px; height: 79px;
+    background: url('../images/advantages.png') -10px -200px no-repeat;
+}
+
+/*------------------Социальные иконки----------------------*/
+
+.bg-facebook{
+    width: 20px; height: 19px;
+    background: url('../images/social.png') 0 0 no-repeat;
+}
+
+.bg-twitter{
+    width: 20px; height: 17px;
+    background: url('../images/social.png') -77px 0 no-repeat;
+}
+
+.bg-insta{
+    width: 20px; height: 20px;
+    background: url('../images/social.png') -156px 1px no-repeat;
+}
+
+.bg-youtube{
+    width: 20px; height:17px;
+    background: url('../images/social.png') -233px 0 no-repeat;
+}
